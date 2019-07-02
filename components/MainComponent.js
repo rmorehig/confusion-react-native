@@ -133,7 +133,15 @@ const MainNavigator = createDrawerNavigator({
       screen: MenuNavigator,
       navigationOptions:{
           title:'Menu',
-          drawerLabel: 'Menu'
+          drawerLabel: 'Menu',
+          drawerIcon: ({ tintColor, focused }) => (
+            <Icon
+              name='list'
+              type='font-awesome'            
+              size={24}
+              color={tintColor}
+            />
+          ),
       }
   },
   Home:{
