@@ -54,7 +54,13 @@ const CustomDrawerContentComponent = (props) => (
 );
 
 const AboutNavigator = createStackNavigator({
-  About: { screen: About },
+  About: { screen: About,
+    navigationOptions: ({ navigation }) => ({
+    headerLeft: <Icon name="menu" size={24} 
+    color= 'white'
+    onPress={ () => navigation.toggleDrawer() } />          
+    })   
+  },
 },
 {
   initialRouteName: 'About',
@@ -72,7 +78,13 @@ const AboutNavigator = createStackNavigator({
 
 
 const ContactNavigator = createStackNavigator({
-  Contact: { screen: Contact },
+  Contact: { screen: Contact,
+    navigationOptions: ({ navigation }) => ({
+      headerLeft: <Icon name="menu" size={24} 
+      color= 'white'
+      onPress={ () => navigation.toggleDrawer() } />          
+    })   
+  },
 },
 {
   initialRouteName: 'Contact',
@@ -89,7 +101,13 @@ const ContactNavigator = createStackNavigator({
 );
 
 const HomeNavigator = createStackNavigator({
-  Home: { screen: Home },
+  Home: { screen: Home,
+    navigationOptions: ({ navigation }) => ({
+    headerLeft: <Icon name="menu" size={24} 
+    color= 'white'
+    onPress={ () => navigation.toggleDrawer() } />          
+    })   
+  },
 },
 {
   navigationOptions: {
