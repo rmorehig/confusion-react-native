@@ -47,10 +47,7 @@ const MenuNavigator = createStackNavigator({
       headerTintColor: '#fff',
       headerTitleStyle: {
           color: "#fff"
-      },
-      headerLeft: <Icon name="menu" size={24}
-        color= 'white'
-        onPress={ () => navigation.toggleDrawer() } />    
+      }  
   }
 }
 );

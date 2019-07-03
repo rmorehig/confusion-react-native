@@ -81,6 +81,7 @@ class Dishdetail extends Component {
     }
 
     render() {
+        const { navigate } = this.props.navigation;
         const dishId = this.props.navigation.getParam('dishId','');
         return(
             <ScrollView>
